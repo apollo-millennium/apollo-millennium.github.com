@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html dir="ltr" lang="en-US" class="no-js ie ie6 lte7 lte8 lte9"><![endif]-->
+<!--[if IE 7 ]><html dir="ltr" lang="en-US" class="no-js ie ie7 lte7 lte8 lte9"><![endif]-->
+<!--[if IE 8 ]><html dir="ltr" lang="en-US" class="no-js ie ie8 lte8 lte9"><![endif]-->
+<!--[if IE 9 ]><html dir="ltr" lang="en-US" class="no-js ie ie9 lte9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html dir="ltr" lang="en-US" class="no-js"><!--<![endif]-->
+    <head>
+        <meta charset="UTF-8" />
+        <title>News</title>
+
+        <!-- jQuery -->
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+
+        <script type="text/javascript">
+        $(function(){
+        // The height of the content block when it's not expanded
+        var adjustheight = 130;
+        // The "more" link text
+        var moreText = "Click to read more...";
+        // The "less" link text
+        var lessText = "Click to read less...";
+        // Sets the .more-block div to the specified height and hides any content that overflows
+        $(".more-less .more-block").css('height', adjustheight).css('overflow', 'hidden');
+        // The section added to the bottom of the "more-less" div
+        $(".more-less").append('<p style="display:block;margin-top:8px"><a href="#" class="adjust"></a></p>');
+        $("a.adjust").text(moreText);
+        $(".adjust").toggle(function() {
+                $(this).parents("div:first").find(".more-block").css('height', 'auto').css('overflow', 'visible');
+                // Hide the [...] when expanded
+                $(this).parents("div:first").find("p.continued").css('display', 'none');
+                $(this).text(lessText);
+            }, function() {
+                $(this).parents("div:first").find(".more-block").css('height', adjustheight).css('overflow', 'hidden');
+                $(this).parents("div:first").find("p.continued").css('display', 'block');
+                $(this).text(moreText);
+        });
+        });
+        </script>
+
+</head>
+
+<body>
+
+    <div class="wrapper" style="width:600px">
+
+        <article id="post-5" >
+
+            <div class="more-less">
+                <div class="more-block">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed diam purus, lacinia eget placerat sit amet, bibendum nec nisl. Curabitur a mattis ipsum. Praesent quis nisi in purus malesuada rhoncus. Pellentesque ut quam eget libero congue lobortis. Nunc sed quam ac erat lobortis eleifend. Donec elementum sodales cursus. Aliquam porttitor massa nisi, in laoreet turpis. Sed consequat condimentum lorem ut dignissim. Sed hendrerit mauris ut massa fermentum laoreet. Pellentesque a leo vitae enim dictum lobortis. Praesent commodo feugiat velit iaculis malesuada.</p>
+                    <p>Phasellus id elit ac lacus faucibus ullamcorper. Etiam ullamcorper pretium tellus, ut pharetra ante pulvinar vel. Sed neque diam, semper vel rhoncus non, congue ut sapien. Integer a mi eget libero elementum lobortis. Donec hendrerit egestas ligula sit amet eleifend. Curabitur pharetra venenatis tempor. Quisque pulvinar malesuada justo, ut euismod arcu pharetra vitae. Cras lobortis, ligula id euismod euismod, ipsum risus varius urna, faucibus gravida lectus mi nec nulla. Fusce eleifend fringilla nibh ut vulputate. Vivamus sagittis leo metus. Etiam facilisis convallis lacus adipiscing hendrerit. Duis ultricies euismod libero, nec blandit est semper a. Phasellus sit amet justo sed quam elementum lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+
+            <p>
+                <a href="#" title="News Item 1"><img src="http://placehold.it/300x187" alt="News Item 1" width="300" height="187" /></a>
+            </p>
+
+        </article><!-- #post-## -->
+
+        <article id="post-6" >
+
+            <div class="more-less">
+                <div class="more-block">
+                    <p>Praesent sem lectus, ullamcorper eget ullamcorper a, congue vel nisl. Nullam volutpat leo vel dui venenatis dapibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac scelerisque lorem. Ut blandit magna eu turpis posuere gravida. Fusce egestas risus in libero ullamcorper sagittis. Vestibulum molestie metus vitae quam dignissim consequat. Vivamus id tellus id lorem consectetur iaculis sit amet interdum ante. Quisque lacinia tellus id mi tincidunt fermentum dignissim velit laoreet. Quisque scelerisque nunc iaculis nisi varius ultrices.</p>
+                    <p>Phasellus id elit ac lacus faucibus ullamcorper. Etiam ullamcorper pretium tellus, ut pharetra ante pulvinar vel. Sed neque diam, semper vel rhoncus non, congue ut sapien. Integer a mi eget libero elementum lobortis. Donec hendrerit egestas ligula sit amet eleifend. Curabitur pharetra venenatis tempor. Quisque pulvinar malesuada justo, ut euismod arcu pharetra vitae. Cras lobortis, ligula id euismod euismod, ipsum risus varius urna, faucibus gravida lectus mi nec nulla. Fusce eleifend fringilla nibh ut vulputate. Vivamus sagittis leo metus. Etiam facilisis convallis lacus adipiscing hendrerit. Duis ultricies euismod libero, nec blandit est semper a. Phasellus sit amet justo sed quam elementum lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+
+            <p>
+                <a href="#" title="News Item 1"><img src="http://placehold.it/300x187" alt="News Item 1" width="300" height="187" /></a>
+            </p>
+
+        </article><!-- #post-## -->
+
+    </div>
+
+            </body>
+
+</html>

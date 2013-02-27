@@ -89,7 +89,6 @@ if ( jQuery( 'body' ).hasClass( 'has-lightbox' ) && ! jQuery( 'body' ).hasClass(
 		jQuery( this ).attr( 'rel', 'lightbox' ).attr( 'title', imageTitle );
 	});
 
-	jQuery( 'a[rel^="lightbox"]' ).prettyPhoto();
 }
 
 /*-----------------------------------------------------------------------------------*/

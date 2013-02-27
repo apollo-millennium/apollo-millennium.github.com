@@ -112,7 +112,7 @@ html body * span.clear,html body * div.clear,html body * li.clear,html body * dd
 
 /* 1.1 Defaults */
 
-body { font: 12px/1.5em sans-serif; color: #444; background-color: #FFFFFF; background-image: url(images/bg-body-tile.png); background-repeat: repeat; background-position: left top; }
+body { font: 12px/1.5em sans-serif; color: #999999; background-color: white; background-repeat: repeat; background-position: left top; }
 
 h1, h2, h3, h4, h5, h6  { margin: 0; font-family:Georgia, serif; color: #222; font-weight:normal; }
 h1  {font-size: 2em } h2  {font-size: 1.8em;} h3  {font-size: 1.6em;} h4  {font-size: 1.2em;} h5  {font-size: 1em;} h6  {font-size: 0.8em;}
