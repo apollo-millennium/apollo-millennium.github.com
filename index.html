@@ -577,11 +577,9 @@ _gaq.push(['_trackPageview']);
     													<span class="sf-sub-indicator"> »</span>
     												</a>
     												<ul style="display: none; visibility: hidden;" class="sub-menu">
-    													<li id="menu-item-3036" class="menu-item menu-item-type-taxonomy menu-item-object-portfolio-gallery menu-item-3036"><a href="http://www.kaleton.co.uk/portfolio-gallery/web-design-portfolio/">Seed</a></li>
-    													<li id="menu-item-3035" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3035"><a href="#">Series A</a></li>
-    													<li id="menu-item-3033" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3033"><a href="#">Mezzanine Financing</a></li>
-    													<li id="menu-item-3002" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3002"><a href="#">Pre-IPO</a></li>
-    													<li id="menu-item-3032" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3032"><a href="#">Leveraged Buyout</a></li>
+    													<li id="menu-item-3036" class="menu-item menu-item-type-taxonomy menu-item-object-portfolio-gallery menu-item-3036"><a id="item-3036" href="#">Seed</a></li>
+    													<li id="menu-item-3035" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3035"><a id="item-3035" href="#">Series A</a></li>
+    													<li id="menu-item-3033" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3033"><a id="item-3033" href="#">Mezzanine Financing</a></li>
     												</ul>
     											</li>
     											<li id="menu-item-3211" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3211"><a class="sf-with-ul" href="#">Strategic partnership
@@ -590,15 +588,15 @@ _gaq.push(['_trackPageview']);
     											</a>
     											<ul style="display: none; visibility: hidden;" class="sub-menu">
     												<li id="menu-item-3216" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3216"><a href="#">Technology partnership</a></li>
-    												<li id="menu-item-3214" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3214"><a href="">Market alliance</a></li>
-    												<li id="menu-item-3213" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3213"><a href="">Outsource partnership</a></li>
-    												<li id="menu-item-3753" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3753"><a href="">Merger & Acquisition</a></li>
+    												<li id="menu-item-3214" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3214"><a href="#">Market alliance</a></li>
+    												<li id="menu-item-3213" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3213"><a href="#">Outsource partnership</a></li>
+    												<li id="menu-item-3753" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3753"><a href="#">Merger & Acquisition</a></li>
     											</ul>
     										</li>
     										<li id="menu-item-3225" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3225"><a class="sf-with-ul" href="http://www.kaleton.co.uk/graphic-design-leeds/">Marketing & Branding</a>
     											<ul style="visibility: hidden; display: none;" class="sub-menu">
     												<li id="menu-item-3699" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3699"><a href="#">Global Branding Initiative</a></li>
-    												<li id="menu-item-3699" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3699"><a href="#">Branding Acquisition</a></li>
+    												<li id="menu-item-3698" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3698"><a href="#">Branding Acquisition</a></li>
     											</ul>
     										</li>
     										<li id="menu-item-3091" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3091"><a class="sf-with-ul" href="#">Professional Service</a>
@@ -660,11 +658,16 @@ _gaq.push(['_trackPageview']);
     											<div id="homepage-column-1" class="block" style="width:50%">
     												<div id="intro" class="widget widget_intro">
 
-    													<h3 class="widget-title">Overview</h3>
-    													<p>We provide advisory services in Mergers & Acquisitions (M&A), Private Placements, and Initial Public Offerings (IPO).  While our clients encompass a wide spectrum of industries, over the years we have developed core competencies and strong vertical expertise in the following sectors: i ) technology, media and entertainment, ii ) health care and life sciences, iii ) consumer products and services, and iv ) cleantech.</p>
-    													<p>
-    														While we are constantly trying to standardize our services, we recognize that each situation presents a unique set of challenges and opportunities.  Our goal is to provide our clients, one at a time, with the very best, tailor-made solution that will help them pursue transaction and growth opportunities through finding synergies in Silicon Valley, wall street and China.
-    													</p>
+    													<h3 id="widget-title" class="widget-title">Overview</h3>
+                                                        <div id="widget-text">
+                                                            <p>
+                                                                We provide advisory services in Mergers & Acquisitions (M&A), Private Placements, and Initial Public Offerings (IPO).  While our clients encompass a wide spectrum of industries, over the years we have developed core competencies and strong vertical expertise in the following sectors: i ) technology, media and entertainment, ii ) health care and life sciences, iii ) consumer products and services, and iv ) cleantech.
+                                                            </p>
+                                                            <p>
+                                                                While we are constantly trying to standardize our services, we recognize that each situation presents a unique set of challenges and opportunities.  Our goal is to provide our clients, one at a time, with the very best, tailor-made solution that will help them pursue transaction and growth opportunities through finding synergies in Silicon Valley, wall street and China.
+                                                            </p>
+                                                        </div>
+
     													<!-- <p>Please browse the rest of our web site to learn about the specific
     														services we offer. Once you are ready to speak to us get in touch and we
     														will be pleased to give you some free advice and a proposal for how we
@@ -788,7 +791,7 @@ _gaq.push(['_trackPageview']);
 
         $(".feature_text").on("showMore", function() {
             $(this).css("height","auto").css("overflow", "visible")
-            $(this).parents("div:first").find("span").text("Read Less")
+            $(this).parents("div:first").find("span").text("Less")
         });
 
         $(".feature_text").on("showLess", function() {
@@ -796,6 +799,150 @@ _gaq.push(['_trackPageview']);
             $(this).parents("div:first").find("span").text("Read More")
 
         })
+
+        $("#item-3036").click(function() {
+            var widget_title = $(this).text()
+            var widget_text = "We help early stage start-ups secure seed funding from Asian angel investors. We will be responsible to organize a mini-syndicate if the investment is large enough to warrant one. Related technical, partner and human resource assistance are also provided. At this stage, we charge equity in exchange of our service.";
+            $("#mini-features").slideUp();
+            $("#widget-title").text(widget_title);
+            $("#widget-text").text(widget_text);
+            $("#homepage-column-2").hide()
+        })
+
+        $("#menu-item-3035").click(function() {
+            var widget_title = $(this).text()
+            var widget_text = "We work closely with Great Tang Global Partners LP, our sister venture capital investment firm and other Asian investment institutions to help Silicon Valley companies to secure their Series-A round of financing.";
+            $("#mini-features").slideUp();
+            $("#widget-title").text(widget_title);
+            $("#widget-text").text(widget_text);
+            $("#homepage-column-2").hide()
+
+        })
+
+        $("#menu-item-3033").click(function() {
+            var widget_title = $(this).text()
+            var widget_text = "We help clients to secure mezzanine financing including but not limited to bridge-loans, Pre-IPO private equity placement, secured loans for management buyout (“MBO”), funding for privatization, etc.";
+            $("#mini-features").slideUp();
+            $("#widget-title").text(widget_title);
+            $("#widget-text").text(widget_text);
+            $("#homepage-column-2").hide()
+
+        })
+
+        $("#menu-item-3214").click(function() {
+            var widget_title = $(this).text()
+            var widget_text = "We focus on Asia & Pacific market. We help our clients to forge market alliance to find mutual beneficial values and realize rapid growth.";
+            $("#mini-features").slideUp();
+            $("#widget-title").text(widget_title);
+            $("#widget-text").text(widget_text);
+            $("#homepage-column-2").hide()
+
+        })
+
+        $("#menu-item-3216").click(function() {
+            var widget_title = $(this).text()
+            var widget_text = "We help find the complementary technology and partners for our clients to forge solid technology solutions and realize the maximal synergy.";
+            $("#mini-features").slideUp();
+            $("#widget-title").text(widget_title);
+            $("#widget-text").text(widget_text);
+            $("#homepage-column-2").hide()
+
+        })
+
+        $("#menu-item-3213").click(function() {
+            var widget_title = $(this).text()
+            var widget_text = "We help our clients to find outsource vendor in China.";
+            $("#mini-features").slideUp();
+            $("#widget-title").text(widget_title);
+            $("#widget-text").text(widget_text);
+            $("#homepage-column-2").hide()
+
+        })
+
+        $("#menu-item-3753").click(function() {
+            var widget_title = $(this).text()
+            var widget_text = "We help our clients to acquire technology and companies. We can also work as sell-side advisor to sell stakes to larger companies.";
+            $("#mini-features").slideUp();
+            $("#widget-title").text(widget_title);
+            $("#widget-text").text(widget_text);
+            $("#homepage-column-2").hide()
+
+        })
+
+        $("#menu-item-3699").click(function() {
+            var widget_title = $(this).text()
+            var widget_text = "We help our clients build global brand in US and European market. We help find the best resources to handle public relationship, branding, advertisement and marketing campaigns.";
+            $("#mini-features").slideUp();
+            $("#widget-title").text(widget_title);
+            $("#widget-text").text(widget_text);
+            $("#homepage-column-2").hide()
+
+        })
+
+        $("#menu-item-3698").click(function() {
+            var widget_title = $(this).text()
+            var widget_text = "We act as the buy-side agent helping our clients purchase brands to quickly establish reputation and gain market entry";
+            $("#mini-features").slideUp();
+            $("#widget-title").text(widget_title);
+            $("#widget-text").text(widget_text);
+            $("#homepage-column-2").hide()
+        })
+
+        $("#menu-item-3270").click(function() {
+            var widget_title = $(this).text()
+            var widget_text = "We have the competent professional team to draft business plans for our clients. ";
+            $("#mini-features").slideUp();
+            $("#widget-title").text(widget_title);
+            $("#widget-text").text(widget_text);
+            $("#homepage-column-2").hide()
+        })
+
+        $("#menu-item-3271").click(function() {
+            var widget_title = $(this).text()
+            var widget_text = "We build financial models in compliance with the local GAAP and accounting standard. ";
+            $("#mini-features").slideUp();
+            $("#widget-title").text(widget_title);
+            $("#widget-text").text(widget_text);
+            $("#homepage-column-2").hide()
+        })
+
+        $("#menu-item-3280").click(function() {
+            var widget_title = $(this).text()
+            var widget_text = "Our public speaking coach course is customized for silicon valley entrepreneurs, providing professional assistance to assure an effective enhancement of personal ability of pitching and presentation. ";
+            $("#mini-features").slideUp();
+            $("#widget-title").text(widget_title);
+            $("#widget-text").text(widget_text);
+            $("#homepage-column-2").hide()
+        })
+
+        $("#menu-item-3281").click(function() {
+            var widget_title = $(this).text()
+            var widget_text = "We help arrange the relevant networking event for the clients.";
+            $("#mini-features").slideUp();
+            $("#widget-title").text(widget_title);
+            $("#widget-text").text(widget_text);
+            $("#homepage-column-2").hide()
+        })
+
+        $("#menu-item-3282").click(function() {
+            var widget_title = $(this).text()
+            var widget_text = "We provide business writing coach course. Our communication director has rich experience in corporate and business communication to ensure the best qulity of our service. ";
+            $("#mini-features").slideUp();
+            $("#widget-title").text(widget_title);
+            $("#widget-text").text(widget_text);
+            $("#homepage-column-2").hide()
+        })
+
+        $("#menu-item-3282").click(function() {
+            var widget_title = $(this).text()
+            var widget_text = "We provide business writing coach course. Our communication director has rich experience in corporate and business communication to ensure the best qulity of our service. ";
+            $("#mini-features").slideUp();
+            $("#widget-title").text(widget_title);
+            $("#widget-text").text(widget_text);
+            $("#homepage-column-2").hide()
+        })
+
+
 
     });
 })(jQuery)

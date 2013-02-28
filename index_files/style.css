@@ -311,7 +311,7 @@ pre { padding: 0.1em 0.5em 0.3em 0.7em; border-left: 10px solid #ccc; margin: 1.
 #main .block.last { padding-right: 0; }
 #main .block .widget-title { font-size: 18px; font-family: Georgia, serif; font-weight: normal; color: #444444; border-bottom: 1px solid #d3d3d3; text-shadow: 0px 1px 1px #ffffff; padding-bottom: 20px; margin-bottom: 20px; }
 
-#intro { color: #444444; line-height: 20px; }
+#intro { color: #444444; line-height: 20px; margin-left: 20px; }
 
 .widget_woo_blog .post { background: url(images/bg-widget.png) repeat top left !important; padding: 20px 0px 10px 0px; margin-bottom: 20px; border-radius: 10px; -moz-border-radius: 10px; -webkit-border-radius: 10px; overflow: auto; }
 .widget_woo_blog .post h2 { padding: 0 20px; }
@@ -999,3 +999,7 @@ img.ui-datepicker-trigger { border: 0px; padding: 0px; }
 .ie7 .slide .slide-content.entry { position: relative; top: 130px; bottom: auto; margin-bottom: -100px; background: url(images/bg-ie-trans.png) repeat left top; }
 .ie8 .button, .ie8 .button:visited {  padding:10px 15px; margin:0; }
 
+span.btn {
+	color: #27aae1;
+	cursor: pointer;
+}
